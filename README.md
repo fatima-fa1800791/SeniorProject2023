@@ -117,6 +117,7 @@ python3 app.py
 ```python
 
 First time
+__________________
 psql
 create user mall with superuser password 'mallpass';
 \q
