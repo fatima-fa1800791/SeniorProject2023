@@ -116,8 +116,6 @@ python3 app.py
 
 ```python
 
-To setup our server you need to write those in terminal window:
-
 First time
 psql
 create user mall with superuser password 'mallpass';
