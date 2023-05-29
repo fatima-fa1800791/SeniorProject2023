@@ -1,0 +1,9 @@
+Hi this code source is written and done By Fatima Arab and Mozna Al-Hajri we would like if you get our permission to use it. We will be happy to answer your questions through email: fa1800791@qu.edu.qa and ma1705176@student.qu.edu.qa:
+
+To setup our server you need to first go to MOI folder read the requirements, and follow them then your MOI server will be on and you can open the MOI webpage to.
+
+Then go to venue folder and read the requirements, and follow them then your venue server will be on and you can open the contact tracing webpage.
+
+Afte that, go to MOPH folder and read the requirements, and follow them then your MOPH server will be on and you can open the MOPH webpage.
+
+Finally go to FaceRecogniton folder run the face recognition code on another terminal, But make sure you have a USB camera connected.
