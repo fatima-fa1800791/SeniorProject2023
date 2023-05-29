@@ -1,0 +1,37 @@
+Hi this code source is written and done By Fatima Arab and Mozna Al-Hajri we would like if you get our permission to use it. We will be happy to answer your questions through email: fa1800791@qu.edu.qa and ma1705176@student.qu.edu.qa:
+
+To setup our server you need to write those in terminal window:
+
+Every time
+_________
+
+export DB_USERNAME=mall
+export DB_PASSWORD=mallpass
+ 
+#Check Every time
+
+export MOI_IP= 192.168.10.15
+export MOI_PORT=5001
+       
+conda activate py37
+ 
+ 
+cd Desktop/Venue\ /face_recog/new_stuff/phase3_mall_Flask/VENUEModules 
+
+python3 app.py
+
+
+Also for video analyzing part: 
+
+1. Make sure that you register all the people which appears in the video in the MOI database.
+
+2. Upload the video in res file located in:
+Desktop/system source code/Venue /phase2_video_analytics/res
+
+3. Modify Desktop/system source code/Venue /phase2_video_analytics/TestDistanceDetectionWithMOI 
+line "25" to the infected case QID and 
+line "115" to the video name which you upload. 
+
+4. Open terminal and run the code located in:
+python3 Desktop/system source code/Venue /phase2_video_analytics/TestDistanceDetectionWithMOI
+
