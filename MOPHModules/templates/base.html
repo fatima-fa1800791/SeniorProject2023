@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <img src="https://qfrs.moph.gov.qa/Styles/images/Logo_MoPH_en.svg"
+    style="width: 320px; height: 120px; object-fit: contain;"
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- FlaskApp</title>
+    <style>
+        nav a {
+            color: #4441d6;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        .person {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f7f4f4;
+        }
+
+        .review {
+                margin-left: 50px;
+                font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">View</a>        
+        <a href="{{ url_for('update') }}">&emsp;&emsp;&emsp;Update</a>
+        <a href="{{ url_for('search') }}">&emsp;&emsp;&emsp;Search</a>
+        <a href="{{ url_for('getemails') }}">&emsp;&emsp;&emsp;Contact Tracing</a>
+    </nav>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

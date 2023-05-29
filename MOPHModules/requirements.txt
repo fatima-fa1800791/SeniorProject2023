@@ -1,0 +1,38 @@
+Hi this code source is written and done By Fatima Arab and Mozna Al-Hajri we would like if you get our permission to use it. We will be happy to answer your questions through email: fa1800791@qu.edu.qa and ma1705176@student.qu.edu.qa:
+
+To setup our server you need to write those in terminal window:
+
+First time
+_________
+createdb moph
+
+psql -d facedb
+
+CREATE USER MOPH WITH SUPERUSER PASSWORD 'mophpass';
+
+\q
+
+psql -U moph 
+
+export DB_USERNAME=moph
+export DB_PASSWORD=mophpass
+
+python init_db.py
+
+# check every time
+export MOI_IP=192.168.43.61
+export MOI_PORT=5001 
+
+Every time
+_________
+
+export DB_USERNAME=moph
+export DB_PASSWORD=mophpass
+
+# check every time
+export MOI_IP=192.168.10.4
+export MOI_PORT=5001 
+
+
+cd Desktop/MOPHModules/
+Python3 app.py
