@@ -90,7 +90,7 @@ Python3 app.py
 
 
 ```
-## 3. Venue sever setup:
+## 3. Venue sever:
 
 ```python
 
