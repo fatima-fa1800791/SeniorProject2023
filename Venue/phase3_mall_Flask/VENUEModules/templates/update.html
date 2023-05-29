@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}Check Contact Tracing {% endblock %}</h1>
+    <br>
+    <form method="post" >
+        <p>
+            <label for="title">QID</label>
+            <input type="text" name="qid"
+                   placeholder="QID">
+            </input>
+        </p>
+
+
+        <p>
+            <label for="convid_status">Choose a covid status</label>
+            <select name="covid_status" id="covid_status">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>              
+            </select>        
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}

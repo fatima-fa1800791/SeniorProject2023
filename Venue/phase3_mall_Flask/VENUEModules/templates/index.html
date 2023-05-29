@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Health status of registered users {% endblock %}</h1>
+    {% for person in persons %}
+        <div class='person'>
+            <h3>QID:{{ person[1] }} </h3>
+            <i><p>Covid status:{{ person[0] }} </p></i>            
+
+            <!-- <i><p>Added {{ person[5] }}</p></i> -->
+        </div>
+    {% endfor %}
+{% endblock %}

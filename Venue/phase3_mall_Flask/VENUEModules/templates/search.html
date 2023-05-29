@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Check Contact Tracing {% endblock %}</h1>
+    <br>
+    <form method="post" >
+        <p>
+            <br>
+            <label for="title">QID</label>
+            <input type="text" name="qid"
+                   placeholder="QID">
+            </input>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
