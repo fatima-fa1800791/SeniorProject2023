@@ -147,7 +147,7 @@ cd FaceRecogniton/face_liveness_detection-Anti-spoofing-master
 
 python3 LiveCaller.py
 ```
-# video analyzing
+## video analyzing
 1. Make sure that you register all the people which appears in the video in the MOI database.
 
 2. Upload the video in res file located at: Venue /phase2_video_analytics/res
