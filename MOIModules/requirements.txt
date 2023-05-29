@@ -1,0 +1,33 @@
+Hi this code source is written and done By Fatima Arab and Mozna Al-Hajri we would like if you get our permission to use it. We will be happy to answer your questions through email: fa1800791@qu.edu.qa and ma1705176@student.qu.edu.qa:
+
+To setup our server you need to write those in terminal window:
+
+MOI
+
+First time
+_________
+createdb moi
+
+psql -d moi
+
+CREATE USER MOI WITH SUPERUSER PASSWORD 'moipass';
+
+\q
+
+psql -U moi 
+
+export DB_USERNAME=moi
+export DB_PASSWORD=moipass
+
+
+
+Every time
+_________
+
+export DB_USERNAME=moi
+export DB_PASSWORD=moipass
+
+
+
+cd Desktop/MOIModules/
+Python3 app.py

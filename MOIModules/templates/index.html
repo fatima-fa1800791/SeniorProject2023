@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Registered Person {% endblock %}</h1>
+{% for person in persons %}
+<div class='person'>
+    <h3>Name: {{ person[0] }} {{person[1] }} </h3>
+    <i><p>Phone: {{ person[2]  }} </p></i>
+    <i><p>Email: {{ person[3]  }} </p></i>
+    <i><p>DOB:  {{person[4]}}   </p></i>
+    <i><p>QID: {{ person[5] }}  </p></i> 
+    <i><p>Face Encoding hidden</p></i> 
+
+    <!-- <i><p>Added {{ person[5] }}</p></i> -->
+</div>
+{% endfor %}
+{% endblock %}

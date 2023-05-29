@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- FlaskApp</title>
+    <style>
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        .person {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f7f4f4;
+        }
+
+        .review {
+                margin-left: 50px;
+                font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+    
+   <img src="https://play-lh.googleusercontent.com/pwGWZrTVQTOtM8S8t-G7ayoHwf-pDngjXZo78RoyFAp-W0xyMm7Z7SbLW3IPdAUviA=w240-h480-rw" alt="hukoomi.gov.qa" style="width:220px;height:150px;">
+        <br></br>
+       <a href="{{ url_for('index') }}">&emsp;&emsp;&emsp;&emsp;&emsp;View</a>
+       <a href="{{ url_for('create') }}">&emsp;&emsp;&emsp;&emsp;Create</a>
+       <a href="{{ url_for('search') }}">&emsp;&emsp;&emsp;&emsp;Search</a>
+    </nav>
+    <br>
+    <hr>
+    <br>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
