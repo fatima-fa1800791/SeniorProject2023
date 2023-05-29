@@ -1,0 +1,26 @@
+
+Hi this code source is written and done By Fatima Arab and Mozna Al-Hajri we would like if you get our permission to use it. We will be happy to answer your questions through email: fa1800791@qu.edu.qa and ma1705176@student.qu.edu.qa:
+
+To setup our server you need to write those in terminal window:
+
+First time
+psql
+create user mall with superuser password 'mallpass';
+\q
+createdb mall
+
+
+
+Each time
+export DB_USERNAME=mall
+export DB_PASSWORD=mallpass
+export MOI_IP=192.168.0.100
+export MOI_PORT=5001
+export MOPH_IP=192.168.0.106
+export MOPH_PORT=5002
+export MALL_SERVER_IP=192.168.0.104
+
+cd /home/pi/projects/ClientInteract/liveness/face_liveness_detection-Anti-spoofing-master
+
+
+python3 LiveCaller.py
